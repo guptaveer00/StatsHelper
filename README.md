@@ -4,23 +4,25 @@ Local command-line study helper. Public source: https://github.com/guptaveer00/S
 
 This README is still a draft until the student writes the four required personal sections below.
 
-## Student-written sections — complete these in your own words
 
-1. **Purpose and motivation:** What does your app do, and why did you choose it?
-2. **Your data:** Explain the source, what one item is, chunking, actual count,
-   and metadata. Inspect the code and facts below before writing.
-3. **Adding and searching:** Explain the real user flow after trying it yourself.
-4. **Two semantic examples:** Run the verified examples below and explain the
-   retrieved items and why keyword matching misses them, in your own words.
+**1. What the app does and why you chose it**
 
-## AI-generated technical notes
+Stats Helper lets me describe a statistics question in everyday language and find related textbook passages, even when I don’t know the technical term. I chose a study helper because it connects the project to material I want to study.
 
-Everything below this heading was written by Codex. It is reference material,
-not the student's personal writing. Codex implemented the Python code, proposed
-and evaluated search examples, debugged extraction, and ran tests. The student
-chose the study-helper direction, textbook, project name, and Desktop location.
-See the separate `prompt_log.md` for actual prompts and development history.
-No work-hour total or student code contribution is inferred.
+**2. What is stored in the database**
+
+The starting data comes from Larry Wasserman’s *All of Statistics*. The database contains 397 passages from chapters 1–16. Each item is a short passage with chapter and section context, kept below the embedding model’s input limit. Metadata includes the source, chapter, section, PDF page, printed page, and token count. Users can also add their own notes.
+
+**3. How users add information and search**
+
+Users choose “Add a note,” enter a title, paste their text, and finish with a period on its own line. The note becomes searchable immediately and stays saved after closing the app. To search, users describe their confusion and choose the textbook, their notes, or both. The app retrieves related passages, creates a reading guide, and provides fill-in-the-blank recall practice.
+
+**4. Two searches that show why meaning matters**
+
+- **“Why does seeing a rash not guarantee a particular diagnosis?”** retrieves the conditional-probability passage on printed page 10, ranked first. It discusses spots and measles rather than using “rash,” “guarantee,” or “diagnosis,” so matching those keywords would miss it.
+- **“Why can an association reverse direction after pooling subpopulations?”** retrieves the Simpson’s paradox passage on printed page 259, ranked third. That item does not contain the important query words, but it introduces the related statistical phenomenon.
+
+
 
 ### Start the app
 

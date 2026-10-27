@@ -1,4 +1,6 @@
-## 1. Choosing and testing the idea
+used codex 
+
+1. Choosing and testing the idea
 
 > I want to build a statistics study helper that finds relevant textbook passages when I describe a confusing concept without knowing its name. Help me decide whether semantic search is appropriate. Ask me questions about what the app should do before suggesting code.
 
